@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(47, 47, 45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color:rgb(114, 143, 157);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #fafaf6;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fbf9fb;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    word-break: break-word;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background-color: #d9534f;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 0.8em;
+}
+
+li button.edit {
+    background-color: #5bc0de;
+}
+
+li button.edit:hover {
+    background-color: #31b0d5;
+}
+
+li button:hover {
+    background-color: #c9302c;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    li button {
+        padding: 4px;
+        font-size: 0.7em;
+    }
+}
